@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edhi Institute of Science and Technology</title>
+   <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e0eafc);
+      color: #333;
+      transition: background 0.5s ease;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #002b5c;
+      color: #fff;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #0056a3;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .course-card {
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    form input, form select {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    form button {
+      padding: 0.8rem;
+      background: #0056a3;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #003e7e;
+    }
+
+    footer {
+      background: #002b5c;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="reveal">
+    <img src="assets/images/EdhiLogo.png" alt="Edhi Logo" class="logo" />
+    <h1>Edhi Institute of Science and Technology</h1>
+    <p class="urdu">ایدھی انسٹیٹیوٹ آف سائنس اینڈ ٹیکنالوجی</p>
+  </header>
+<br>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#download">Prospectus</a>
+  </nav>
+
+  <section id="home" class="reveal">
+    <h2>Welcome to Edhi Institute</h2>
+    <p>Providing vocational skills for a brighter future.</p>
+    <p class="urdu">روشن مستقبل کے لیے پیشہ ورانہ مہارتیں فراہم کرنا</p>
+  </section>
+
+  <section id="about" class="reveal">
+    <h2>About Us</h2>
+    <p>We are a vocational training institute based in Gulbai, Karachi, offering technical and professional education.</p>
+    <p class="urdu">ہم گل بائی کراچی میں واقع ایک ووکیشنل ادارہ ہیں جو پیشہ ورانہ اور فنی تعلیم فراہم کرتا ہے۔</p>
+  </section>
+
+  <section id="courses" class="reveal">
+    <h2>Our Courses / ہمارے کورسز</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <img src="assets/images/auto-electrician.jpg" alt="Auto Electrician">
+        <h3>Auto Electrician</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/general-electrician.jpg" alt="General Electrician">
+        <h3>General Electrician</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/dit.jpg" alt="Diploma in IT">
+        <h3>Diploma in Information Technology</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/web-designing.jpg" alt="Web Designing">
+        <h3>Web Designing</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/graphic-designing.jpg" alt="Graphic Designing">
+        <h3>Graphic Designing</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/diesel-mechanic.jpg" alt="Diesel Mechanic">
+        <h3>Diesel Mechanic</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/machinist.jpg" alt="Machinist">
+        <h3>Machinist</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/ac-refrigeration.jpg" alt="AC and Refrigeration">
+        <h3>AC and Refrigeration</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/mobile-repairing.jpg" alt="Mobile Repairing">
+        <h3>Mobile Repairing</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/welding.jpg" alt="Welding">
+        <h3>Welding</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/plumbing.jpg" alt="Plumbing">
+        <h3>Plumbing</h3>
+      </div>
+      <div class="course-card">
+        <img src="assets/images/tailoring.jpg" alt="Tailoring">
+        <h3>Tailoring</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissions" class="reveal">
+    <h2>Admission Form</h2>
+    <form action="#" method="post">
+      <label>Full Name / مکمل نام:</label>
+      <input type="text" required />
+
+      <label>Course:</label>
+      <select>
+        <option>Auto Electrician</option>
+        <option>General Electrician</option>
+        <option>Diploma in Information Technology</option>
+        <option>Web Designing</option>
+        <option>Graphic Designing</option>
+        <option>Diesel Mechanic</option>
+        <option>Machinist</option>
+        <option>AC and Refrigeration</option>
+        <option>Mobile Repairing</option>
+        <option>Welding</option>
+        <option>Plumbing</option>
+        <option>Tailoring</option>
+      </select>
+
+      <label>Phone:</label>
+      <input type="tel" required />
+
+      <label>Email:</label>
+      <input type="email" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="gallery" class="reveal">
+    <h2>Gallery / گیلری</h2>
+    <p>Add photos of your institute here.</p>
+  </section>
+
+  <section id="download" class="reveal">
+    <h2>Download Prospectus / پروسپیکٹس</h2>
+    <a href="assets/downloads/prospectus.pdf" download>Click here to download</a>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 0329 1159115</p>
+    <p>📍 Location: Gulbai, Karachi</p>
+  </section>
+
+  <footer class="reveal">
+    <p>&copy; 2025 Edhi Institute of Science and Technology</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      delay: 100,
+      duration: 1000,
+      distance: '40px',
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 200,
+      reset: false
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      reveals.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
